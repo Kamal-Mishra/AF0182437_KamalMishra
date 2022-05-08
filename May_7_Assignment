@@ -13,3 +13,43 @@ import java.util.*;
 				
 			}
 }
+
+Q1:  WAP to add, multiply, duv, sub
+
+import java.util.*;
+class math_prob{
+		public static void main(String[]args){
+		int num1,num2, add, sub, mult, opt;
+		double div;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter First Number: ");
+		num1=sc.nextInt();
+		System.out.print("Enter Second Number: ");
+		num2=sc.nextInt();
+		while(true){
+		System.out.print("Enter 1 for addition"+"\n"+"Enter 2 for subtraction"+"\n"+"Enter 3 for multiplication"+"\n"+"Enter 4 for division"+"\n"+"Enter 5 for Exit");
+		opt=sc.nextInt();
+		switch(opt){
+			
+			case 1:
+			add=num1+num2;
+			System.out.println("Addition is: "+add);
+			break;
+			
+			case 2:
+			sub=num1-num2;
+			System.out.println("Subtraction is: "+sub);
+			break;
+			
+			case 3:
+			div=num1/num2;
+			System.out.println("Division is: "+div);
+			break;
+			
+			case 5:
+			System.exit(0);
+		}
+		
+		}
+		}
+}
