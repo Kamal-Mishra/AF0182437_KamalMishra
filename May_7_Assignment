@@ -1,0 +1,15 @@
+Q1:  WAP to display your basic information
+
+import java.util.*;
+	class basic_info{
+			public static void main(String[]args){
+				String my_name;
+				my_name="Kamal Mishra";
+				int roll_no;
+				roll_no=27;
+				long phone_no;
+				phone_no=9892126251L;
+					System.out.println("My Name: "+my_name+"\n"+"Roll No: "+roll_no+"\n"+"Phone No: "+phone_no);
+				
+			}
+}
