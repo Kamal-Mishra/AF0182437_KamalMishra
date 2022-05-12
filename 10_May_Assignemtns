@@ -17,3 +17,30 @@ public class all_prac {
 	}
 
 }
+
+
+WAP to accept a no from the user and display the multiplication table 1*1=1
+
+package Java_Prac;
+
+import java.util.Scanner;
+
+public class all_prac {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i, num,times;
+		times=12;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter tablw no: ");
+		num=sc.nextInt();
+		
+		for(i=1; i<=times; i++)
+		{
+			System.out.println(num*i);
+		}
+		
+
+	}
+
+}
