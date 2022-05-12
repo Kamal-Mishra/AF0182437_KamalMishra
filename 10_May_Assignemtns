@@ -1,0 +1,19 @@
+WAP to display the no from 876 to 23
+
+
+package Java_Prac;
+
+public class all_prac {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+		
+		for(i=876; i>=23; i--)
+		{
+			System.out.println( "Number from 876 to 23:"+i);
+		}
+
+	}
+
+}
