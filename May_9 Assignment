@@ -1,0 +1,75 @@
+Q.1 WAP to accept a no from user if no is even than display the square
+import java.util.Scanner;
+
+public class cond_stat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num, square;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter even Number: ");
+		num=sc.nextInt();
+		if (num%2==0)
+		{
+			square=num*num;
+			System.out.println("Square of Even Number is: "+square);
+		}
+	
+
+	}
+
+}
+
+WAP to accept a no from user and check is even or odd
+import java.util.Scanner;
+
+public class cond_stat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter Number: ");
+		num=sc.nextInt();
+		if (num%2==0)
+		{
+		
+			System.out.println("Number is Even: "+num);
+		}
+		else 
+		{
+			System.out.println("Number is Odd: "+num);
+		}
+	
+
+	}
+
+}
+
+WAP to accept a character from user and check it is vowel or not
+import java.util.Scanner;
+
+public class cond_stat {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		char alph;
+		int i=0;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter Alphabet: ");
+		alph=sc.next().charAt(0);
+		if (alph=='a'|| alph=='e'|| alph=='i'|| alph=='o'|| alph=='u')
+		{
+			System.out.println("Vowel: "+alph);
+		}
+		else if (alph>='a'||alph<='z');
+		{
+			System.out.println("Not a Vowel: "+alph);
+		}
+		
+	
+
+	}
+
+}
+
