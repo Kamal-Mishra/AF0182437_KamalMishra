@@ -1,0 +1,75 @@
+Multi Array Dimensional
+
+package Java_Prac;
+
+import java.util.Scanner;
+
+public class Multi_dimarr {
+
+	public static void main(String[] args) {
+		int i, j, row, column;
+		Scanner sc=new Scanner(System.in);
+				System.out.println("Enter no of row og first matrix");
+		row=sc.nextInt();
+		System.out.println("Enter no of column of first matrix");
+		column=sc.nextInt();
+		int arr[][]=new int[row][column];
+		System.out.println("Enter "+row*column+" numbers");
+		System.out.println("Enter no's: ");
+		for(i=0;i<row; i++)
+		{
+			for(j=0; j<column; j++) {
+				arr[i][j]=sc.nextInt();
+
+			}
+		}
+		
+		for(i=0; i<row; i++)
+		{
+			for (j=0; j<column; j++)
+			{
+				System.out.print(arr[i][j]+"\t");
+			}
+			System.out.println();
+		}
+		
+		/*System.out.println("Enter no of row of second matrix");
+		row=sc.nextInt();
+		System.out.println("Enter no of column of second matrix");
+		column=sc.nextInt();*/
+		int arr2[][]=new int[row][column];
+		System.out.println("Enter "+row*column+" numbers for second matrix");
+		System.out.println("Enter no's: ");
+		for(i=0;i<row; i++)
+		{
+			for(j=0; j<column; j++) {
+				arr2[i][j]=sc.nextInt();
+
+			}
+		}
+		
+		for(i=0; i<row; i++)
+		{
+			for (j=0; j<column; j++)
+			{
+				System.out.print(arr2[i][j]+"\t");
+			}
+			System.out.println();
+		}
+		int arr3[][]=new int[row][column];
+		for(i=0;i<row;i++)
+		{
+			for(j=0;j<column; j++)
+			{
+				arr3[i][j]=arr[i][j]+arr2[i][j];
+				
+				System.out.print(+arr3[i][j]+"\t");
+			}
+			System.out.println();
+		}
+		
+
+	}
+
+
+}
