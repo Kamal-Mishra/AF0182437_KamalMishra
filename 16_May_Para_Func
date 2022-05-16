@@ -1,0 +1,84 @@
+Write a function to accept two no from the user and do the process of swapping
+a)With third variable
+package Function;
+
+import java.util.Scanner;
+
+public class para_func {
+	
+	int res;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method 
+		
+		para_func obj=new para_func();
+		obj.accept();
+
+
+	}
+	public void accept()
+	{
+		Scanner sc=new Scanner(System.in);
+		int num1,num2;
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		swap(num1,num2);
+		
+		
+	}
+	public void swap(int a,int b)
+	{
+		res=a;
+		a=b;
+		b=res;
+		System.out.println("a= "+a+" b= "+b);
+	}
+	
+	
+}
+
+
+
+
+
+b)Without third variable
+
+package Function;
+
+import java.util.Scanner;
+
+public class para_func {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method 
+		
+		para_func obj=new para_func();
+		obj.accept();
+
+
+	}
+	public void accept()
+	{
+		Scanner sc=new Scanner(System.in);
+		int num1,num2;
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		swap(num1,num2);
+		
+		
+	}
+	public void swap(int a,int b)
+	{
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("a= "+a+" b= "+b);
+	}
+	
+	
+}
+
+
