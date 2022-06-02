@@ -1,0 +1,26 @@
+package Java_Prac;
+import java.util.Scanner;
+
+public class Practice_1 {
+
+	public static void main(String[] args) {
+		int sum=0;
+		int size=10;
+		int[] num=new int[size];
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter ten numbers: ");
+		
+		for(int i=0;i<num.length; i++) {
+
+			num[i]=sc.nextInt();
+			
+		}
+		for(int j=0; j<num.length; j++) {
+			
+			sum+=num[j];
+		}
+		System.out.println("Average: "+sum/size);
+		
+	}
+
+}
