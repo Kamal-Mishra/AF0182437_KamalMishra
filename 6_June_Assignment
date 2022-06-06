@@ -1,0 +1,63 @@
+/*WAP to accept a no from user and check it is armstrong or not 
+if it is armstrong than check it is even or odd and 
+if it is even than check it is positive or negative.*/
+
+package Func_Lec;
+
+import java.util.Scanner;
+
+public class Para_Fun1 {
+	
+	
+static int total=0;
+	public static void main(String[] args) {
+		
+		accept();
+
+	}
+	public static void accept()
+	{
+		Scanner sc=new Scanner(System.in);
+		int num1;
+		System.out.println("Enter a numbers: ");
+		num1=sc.nextInt();
+		Arms(num1);
+		Pos_Neg();
+		
+	}
+	
+	public static int Arms(int a)
+	{
+		 int number, temp = 0;
+		        
+		        number = a;
+		        while (number != 0)
+		        {
+		            temp = number % 10;
+		            total = total + temp*temp*temp;
+		            number /= 10;
+		        }
+
+		        if(total == a & a==0%2)
+		            System.out.println(a + " is an Armstrong number");
+		        else
+		            System.out.println(a + " is not an Armstrong number");
+		        return a;
+		    }
+
+	public static void Pos_Neg()
+	{
+		
+		if(total>0)
+		{
+			System.out.println("Number is positive");
+		}
+		else 
+		{
+			System.out.println("Number is negative");
+		}
+	
+
+	}
+}
+
