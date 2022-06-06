@@ -1,0 +1,90 @@
+Write a function to implement Greater between two no, Sum of digit, Even odd . (Class_One)
+
+(Class_Two) call Sum of digit
+
+(Class_Three) call the function of Class_Two and also call GRT two , Even odd
+
+package Func_Lec;
+
+import java.util.Scanner;
+
+public class Class_one {
+
+	public static void Grtr()
+	{
+		int num1,num2;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter two numbers");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		 if (num1 == num2)
+		       System.out.println ("both are equal");
+		     else if (num1 > num2)
+		         System.out.println (num1 + " is greater");
+
+		     else
+		         System.out.println (num2 + " is greater");
+
+	}
+	
+	public static void SumofDig()
+	{
+		long num, sum;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number: ");
+		num=sc.nextInt();
+		
+		for(sum=0; num!=0; num=num/10)
+		{
+			sum=sum+num%10;
+		}
+		System.out.println("Sum of digts is: "+sum);
+	}
+	
+	public static void EvenOdd()
+	{
+		int num;
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter a number: ");
+		num=sc.nextInt();
+		if(num==0%2)
+		{
+			System.out.println("Number is even");
+		}
+		else 
+		{
+			System.out.println("Number is odd");
+		}
+	}
+
+}
+
+
+package Func_Lec;
+
+public class Class_Two {
+
+	public static void func_two()
+	{
+		// TODO Auto-generated method stub
+		Class_one obj= new Class_one();
+		obj.SumofDig();
+
+	}
+
+}
+package Func_Lec;
+
+public class Class_Three {
+
+	public static void main(String[] args) {
+		Class_Two obj=new Class_Two();
+		obj.func_two();
+		Class_one obj1=new Class_one();
+		obj1.Grtr();
+		obj1.EvenOdd();
+		
+
+	}
+
+}
