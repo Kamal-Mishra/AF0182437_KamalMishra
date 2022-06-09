@@ -1,0 +1,144 @@
+WAP to create a class which will accept all the data and store all the variable , in one class do the add, second class SUB , third class MUL, forth classs DIV , fifth class MOD
+
+package practice_prog;
+
+import java.util.Scanner;
+
+public class Accept_Heir  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void accept()
+	{
+		int num1, num2;
+		Scanner sc= new Scanner (System.in);
+		System.out.println("Please Enter Two Numbers: ");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		Add_Heir obj1 = new Add_Heir();
+		obj1.add(num1, num2);
+		Sub_Heir obj2=new Sub_Heir();
+		obj2.sub(num1, num2);
+		Mult_Heir obj3 = new Mult_Heir();
+		obj3.mult(num1, num2);
+		Div_Heir obj4=new Div_Heir();
+		obj4.div(num1, num2);
+		Mod_Heir obj5=new Mod_Heir();
+		obj5.mod(num1, num1);
+	}
+	
+	
+
+}
+_________________________________________________________________________________________________
+package practice_prog;
+
+public class Add_Heir extends Accept_Heir {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void add(int a, int b)
+	{
+		
+		int res=a+b;
+		System.out.println("Addition is : "+res);
+	}
+
+}
+___________________________________________________________________________________________________
+package practice_prog;
+
+public class Sub_Heir extends Accept_Heir {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public void sub(int a, int b)
+	{
+		int res=a-b;
+		System.out.println("Subtraction is : "+res);
+	}
+
+
+}
+
+
+_____________________________________________________________________________________________________________
+
+package practice_prog;
+
+public class Mult_Heir extends Accept_Heir {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void mult(int a, int b)
+	{
+		int res=a*b;
+		System.out.println("Multiplication is : "+res);
+	}
+
+}
+
+
+___________________________________________________________________________________________________
+
+package practice_prog;
+
+public class Mult_Heir extends Accept_Heir {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void mult(int a, int b)
+	{
+		int res=a*b;
+		System.out.println("Multiplication is : "+res);
+	}
+
+}
+
+
+__________________________________________________________________________________________
+
+package practice_prog;
+
+public class Mod_Heir extends Accept_Heir {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void mod(int a, int b)
+	{
+		int res=a%b;
+		System.out.println("Mod is : "+res);
+	}
+
+}
+
+-----------------------------------------------------------------------------------
+package practice_prog;
+
+public class Display_Heir extends Accept_Heir {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Display_Heir obj= new Display_Heir();
+		obj.display();
+	}
+	public void display()
+	{
+		accept();
+	}
+
+}
+
