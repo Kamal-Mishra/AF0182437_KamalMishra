@@ -1,0 +1,66 @@
+package practice_prog;
+
+import java.util.Scanner;
+
+public class Palndrome_num {
+
+	public void palindrome(int a)
+	{
+
+		int rem, rev=0;
+		
+		int temp;
+		/*Scanner sc=new Scanner(System.in);
+		System.out.print("Enter number: ");
+		num=sc.nextInt();*/
+		temp=a;
+
+		
+		while(temp!=0)
+		{
+			rem=temp%10;
+			rev=rev*10+rem;
+			temp=temp/10;
+			
+		}
+		if(a==rev)
+		{
+			System.out.println(a+ " is Palindrome");
+		}
+		else
+			System.out.println(a+" not Palindrome");
+		
+		
+	}
+
+}
+
+
+package practice_prog;
+
+import java.util.Scanner;
+
+____________________________________________________________________________________________________________
+
+public class Child_class extends Palndrome_num {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Child_class obj = new Child_class();
+		obj.accept();
+	
+}
+	public void accept()
+	{
+		int num;
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter number: ");
+		num=sc.nextInt();
+		palindrome(num);
+	}
+	
+}
+		
+	
+
+
