@@ -1,0 +1,82 @@
+WAP to create a class Reverse No, second class SOD , Third class use both the class property and display the output
+
+package practice_prog;
+
+import java.util.Scanner;
+
+public class Pal_sod_rev extends Sod {
+	
+
+	public static void main(String[] args) {
+		Pal_sod_rev obj=new Pal_sod_rev();
+		obj.accept();
+		
+	}
+		
+		public void accept()
+		{
+			int num;
+			Scanner sc=new Scanner(System.in);
+			System.out.print("Enter number: ");
+			num=sc.nextInt();
+			SumofDig(num);
+			reverse_no(num);
+
+	
+		
+	
+	
+}
+	}
+	
+__________________________________________________________________________________________________________________________
+
+package practice_prog;
+
+
+public class Sod extends Reverse_num {
+
+	
+
+
+public void SumofDig(int a)
+{
+	
+	int sum;
+	
+	for(sum=0; a!=0; a=a/10)
+	{
+		sum=sum+a%10;
+	}
+	System.out.println("Sum of digts is: "+sum);
+}
+
+
+}
+
+________________________________________________________________________________________________-
+package practice_prog;
+
+
+public class Reverse_num {
+	public static void main (String args[])
+	{
+		
+		
+	}
+
+	public void reverse_no(int a) 
+	{
+		
+		int rem, rev=0;
+		while(a!=0)
+		{
+			rem=a%10;
+			rev=rev*10+rem;
+			a=a/10;
+			
+		}
+		System.out.println(rev);
+	}
+
+}
