@@ -1,0 +1,151 @@
+package javlab;
+
+import java.util.Scanner;
+
+public class Perc_Arr extends Greater_Arr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void perc()
+	{
+		/*int sub=5;
+	int total_marks=0;
+	int[] marks = new int[5];
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter marks of 5 sub: ");*/
+		System.out.println("Process of Percentage");
+	int[] array=accpt_val();
+	int totalsub_marks=size*100;
+
+	int total_marks=0,perc,average=0;
+
+		for (i=0; i<size; i++)
+		{
+		total_marks+=array[i];
+		 average=total_marks/size;
+		}
+		
+		
+			
+	perc=(total_marks*100)/totalsub_marks;
+	System.out.println(perc+"%");
+	}
+	
+
+}
+____________________________________________________________________________________
+
+package javlab;
+
+import java.util.Scanner;
+
+public class Greater_Arr extends Accept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void greater()
+	{
+		System.out.println("Process of greater");
+
+		int[] array=accpt_val();
+
+		temp=array[0];
+			 for(int j=0; j<size; j++)
+			 {
+				 if(temp < array[j]){
+		               temp = array[j];
+		              
+			 }
+		 }
+	
+		 System.out.println("Greatest num is: "+temp);
+	}
+
+}
+____________________________________________________________________________________________
+package javlab;
+
+import java.util.Scanner;
+
+public class Palindrome extends Accept {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public void palindrome()
+	{
+
+		int rem, rev=0;
+		
+		int[] array=accpt_val();
+		temp=array[0];	
+		int num=array[0];
+		
+		while(temp>0)
+		{
+			rem=temp%10;
+			rev=rev*10+rem;
+			num=num/10;
+			
+		}
+		if(temp==rev)
+		{
+			System.out.println(num+ " is Palindrome");
+		}
+		else
+			System.out.println(num+" not Palindrome");
+		
+		
+	}
+
+}
+____________________________________________________________________________________________-
+  package javlab;
+
+import java.util.Scanner;
+
+public class Accept {
+
+	int i,j, size, temp;
+	public int[] accpt_val()
+	{
+		
+		Scanner sc= new Scanner (System.in);
+		System.out.println("How many numbers you want to enter: ");
+		size=sc.nextInt();
+		int [] array= new int[size];
+		
+		System.out.println("Enter"+size+"numvbers");
+		for(i =0; i<size; i++)
+		{
+			array[i]=sc.nextInt();
+		}
+		return array;
+		
+	}
+
+}
+________________________________________________________________________________
+
+package javlab;
+
+public class Display {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Greater_Arr obj=new Greater_Arr();
+		obj.greater();
+		Perc_Arr obj1=new Perc_Arr();
+		obj1.perc();
+		Palindrome obj2 = new Palindrome();
+		obj2.palindrome();
+
+	}
+
+}
+
