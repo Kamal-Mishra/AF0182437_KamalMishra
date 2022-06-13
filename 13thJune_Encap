@@ -1,0 +1,90 @@
+package Encap;
+
+public class Prog_Encap {
+	
+	private String name;
+	int roll_no, phone_no;
+	int[] marks=new int[5];
+	double perc;
+	private char grade;
+	
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getPerc() {
+		return perc;
+	}
+	public void setPerc(double perc) {
+		this.perc = perc;
+	}
+	public char getGrade() {
+		return grade;
+	}
+	public void setGrade(char grade) {
+		this.grade = grade;
+	}
+
+}
+__________________________________________________________________________________________
+package Encap;
+
+import java.util.Scanner;
+
+public class Prog_Encap1 {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Prog_Encap1 obj1=new Prog_Encap1();
+		obj1.marks();
+		
+
+	}
+	public void marks() 
+	{
+		String name1;
+		int  i,total_marks=0;
+		double temp;
+		Prog_Encap obj=new Prog_Encap();
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Enter your Name: ");
+		name1=sc.nextLine();
+		System.out.println("Enter your Roll_No: ");
+		obj.roll_no=sc.nextInt();
+		System.out.println("Enter your Phone No: ");
+		obj.phone_no=sc.nextInt();
+		System.out.println("Enter marks of 5 subjects: ");
+		for (i=0; i<5; i++)
+		{
+			obj.marks[i]=sc.nextInt();
+			total_marks+=obj.marks[i];
+		}
+		temp=((total_marks*100)/500);
+		
+		obj.setPerc(temp);
+		obj.setName(name1);
+		
+		
+		
+		System.out.println("Name: "+obj.getName());
+		System.out.println("Roll No: "+obj.roll_no);
+		System.out.println("Phone_No: "+obj.phone_no);
+		System.out.println("Percentage : "+obj.getPerc());
+		
+
+	}	
+	
+	public void perc()
+	{
+		marks();
+		
+		
+	}
+
+}
