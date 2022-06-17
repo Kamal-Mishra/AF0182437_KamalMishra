@@ -1,0 +1,69 @@
+package ooops;
+
+import java.util.Scanner;
+
+public class Constructor_SI {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		func();
+	}
+	
+	public Constructor_SI(int a, int b)
+	{
+		if(a > b)
+		{
+			System.out.println(a+" is greater than "+ b);
+		}
+		else 
+		{
+			System.out.println(b+" is greater than "+ a);
+
+		}
+	}
+
+		public Constructor_SI(int a, int b, float c)
+		{
+			double si = a * b * c / 100;
+			System.out.println("The Simple Interest is : "+si);
+		}
+		
+	
+	public static void func()
+	{
+		int num1,num2;
+		Scanner sc=new Scanner (System.in);
+		System.out.println("Enter two Numbers: ");
+		num1=sc.nextInt();
+		num2=sc.nextInt();
+		Constructor_SI obj = new Constructor_SI(num1,num2);
+		
+		int princ,rate;
+		float time; double si;
+		System.out.println("Enter Principal amount: ");
+		princ=sc.nextInt();
+		System.out.println("Enter Rate: ");
+		rate=sc.nextInt();
+		System.out.println("Enter Time period: ");
+		time=sc.nextInt();
+		si=(princ*rate*time)/100;
+		Constructor_SI obj1 = new Constructor_SI(princ,rate,time);
+		
+		int num;
+		System.out.print("Enter number: ");
+		num=sc.nextInt();
+		int sum;
+		
+		for(sum=0;  num!=0; num=num/10)
+		{
+			sum=sum+num%10;
+		}
+		System.out.println("Sum of digts is: "+sum);
+		Constructor_SI obj2 = new Constructor_SI(num,sum);
+
+	}		
+	
+
+}
+		
+		
