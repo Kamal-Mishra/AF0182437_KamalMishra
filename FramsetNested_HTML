@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Frames</title>
+	</head>
+	
+	<frameset rows="30%,*">
+	
+	<frame src="text.html"/>
+	<frameset cols="20%,*">
+	<frame src="colorss.html"/>
+
+	<frameset rows= "50%,*">
+	<frameset cols= "*,20%">
+		<frame name="redframe" src=""/>
+		<frame name="yellowframe" src=""/>
+
+	</frameset>
+	
+		<frameset rows="50%,*">
+		<frameset cols= "20%,*">
+		<frame name="pinkframe" src=""/>
+		<frame name="greenframe" src=""/>
+		
+	</frameset>
+	<frameset rows="110%,*">
+		<frameset cols= "50%,*">
+		<frame name="blueframe" src=""/>
+		<frame name="purpleframe" src=""/>
+		
+	
+
+</html>
+_______________________________________________________________________________________________________
+<html>
+	<head>
+		
+	</head>
+	<body>
+	<a href="Red.html" target="redframe">Red</a>
+		<a href="green.html" target="greenframe">Green</a>
+	<a href="blue.html" target="blueframe">Blue</a>
+	<a href="pink.html" target="pinkframe">Pink</a>
+	<a href="purple.html" target="purpleframe">Purple</a>
+	<a href="yellow.html" target="yellowframe">Yellow</a>
+
+	</body>
+</html>
